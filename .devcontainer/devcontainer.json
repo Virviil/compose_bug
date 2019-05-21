@@ -1,0 +1,10 @@
+{
+    "name": "Compose Bug",
+    "dockerComposeFile": [
+        "docker-compose.extend.yml",
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose"
+}

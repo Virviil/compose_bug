@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  app:
+    image: ubuntu:latest
+    container_name: compose_bug_app
+    volumes:
+      - ..:/workspace
+      - ~/.gitconfig:/root/.gitconfig
+    command: sleep infinity
+    depends_on:
+      - postgres
